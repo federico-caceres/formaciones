@@ -1,0 +1,14 @@
+[
+    {
+        "estudiante":"Federico Cáceres",
+        "ci":3883569,
+        "codigo-certificado":1,
+        "curso":"Curso Básico de HTML5"
+    },
+    {
+        "estudiante":"Federico Cáceres",
+        "ci":3883568,
+        "codigo-certificado":2,
+        "curso":"Curso Básico de HTML5"
+    }
+]

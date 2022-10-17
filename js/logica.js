@@ -27,3 +27,25 @@ function buscarAlumno(){
     }
 
 }
+
+function eliminarDatosModal(){
+    var nombreEstudiante = document.getElementById("alumno");
+        
+    var child = nombreEstudiante.lastElementChild; 
+    while (child) {
+        nombreEstudiante.removeChild(child);
+        child = nombreEstudiante.lastElementChild;
+    }
+}
+
+
+
+// const modal = document.getElementById("exampleModal");
+
+// document.addEventListener("click", (event) => {
+//   const isClickInside = modal.contains(event.target);
+
+//   if (!isClickInside) {
+//     eliminarDatosModal();
+//   }
+// });

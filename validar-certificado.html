@@ -11,11 +11,17 @@
     <body>
         <div class="container-fluid">
             
+            <div class="row justify-content-center">
+                <div class="col">
+                    <h1>Página en desarrollo (no funcional)</h1>
+                </div>
+            </div>
+
             <div class="row justify-content-center mt-5">
-                <div class="col-8">
+                <div class="col-10">
                     <div class="input-group mb-3 mt-5">
-                        <input id="codigo" type="text" class="form-control form-control-lg" placeholder="Código del certificado a validar" aria-label="Código del certificado a validar" aria-describedby="btn-validate-certificate">
-                        <button class="btn btn-outline-primary" type="button" id="btn-validate-certificate" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="buscarAlumno()">Validar</button>
+                        <input id="codigo" type="text" class="form-control form-control-lg" placeholder="Código del certificado" aria-label="Código del certificado" aria-describedby="btn-validate-certificate">
+                        <button class="btn btn-outline-primary btn-lg" type="button" id="btn-validate-certificate" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="buscarAlumno()">Validar</button>
                     </div>
                 </div>
             </div>
@@ -27,7 +33,7 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <h1 class="modal-title fs-5" id="exampleModalLabel">Resultado búsqueda</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="eliminarDatosModal()"></button>
                         </div>
                         <div class="modal-body">
                             <div id="certificadoEncontrado" class="alert alert-success">
@@ -40,7 +46,7 @@
                         </div>
                         <div class="modal-footer">
                             <div>
-                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="eliminarDatosModal()">Cerrar</button>
                             </div>
                         </div>
                     </div>

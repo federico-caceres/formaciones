@@ -7,23 +7,35 @@ function buscarAlumno(){
     msgError = document.getElementById("certificadoNoEncontrado");
 
     eliminarDatosModal();
-    found = data.find(e => e.codigo == codigo);
 
-    if (found != undefined) 
+
+    if (validarImput(codigo)) 
     {
-        nombreEstudiante = document.getElementById("alumno");
-        div = document.createElement("div");
-        div.innerHTML = 
-        '<br>' +
-        '<strong>Alumno: </strong>' + found.estudiante + '<br>' + 
-        '<strong>C.I.: </strong>' + found.ci + '<br>' + 
-        '<strong>Curso: </strong>' + found.curso;
-        nombreEstudiante.appendChild(div);
-        msgOk.style.display = "block";
-    }else{
-        msgError.style.display = "block";
+        found = data.find(e => e.codigo == codigo);
+    
+        if (found != undefined) 
+        {
+            nombreEstudiante = document.getElementById("alumno");
+            div = document.createElement("div");
+            div.innerHTML = 
+            '<br>' +
+            '<strong>Alumno: </strong>' + found.estudiante + '<br>' + 
+            '<strong>C.I.: </strong>' + found.ci + '<br>' + 
+            '<strong>Curso: </strong>' + found.curso;
+            nombreEstudiante.appendChild(div);
+            msgOk.style.display = "block";
+        }else{
+            msgError.style.display = "block";
+        }
     }
 
+}
+
+function validarImput(codigo){
+    if (codigo == "") {
+        alert("El código no puede ser vacío, favor cargué el código validador del certificado!");
+        return false;
+    }
 }
 
 function eliminarDatosModal()

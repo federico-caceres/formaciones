@@ -15,7 +15,8 @@ function buscarAlumno(){
         {
             nombreEstudiante = document.getElementById("alumno");
             div = document.createElement("div");
-            path = '../certificates/' + Number(codigo) + '.pdf';
+            // path = '../certificates/' + Number(codigo) + '.pdf'; // local path
+            path = 'https://federico-caceres.github.io/formaciones/certificates/' + Number(codigo) + '.pdf';
 
             div.innerHTML = 
             '<br>' +

@@ -1,32 +1,34 @@
 
-
 function buscarAlumno(){
 
     codigo = document.getElementById("codigo").value;
     msgOk = document.getElementById("certificadoEncontrado");
     msgError = document.getElementById("certificadoNoEncontrado");
+    myModal = new bootstrap.Modal(document.getElementById("exampleModal"), {});
 
     eliminarDatosModal();
-
 
     if (validarImput(codigo)) 
     {
         found = data.find(e => e.codigo == codigo);
-    
         if (found != undefined) 
         {
             nombreEstudiante = document.getElementById("alumno");
             div = document.createElement("div");
+            path = '../certificates/' + Number(codigo) + '.pdf';
+
             div.innerHTML = 
             '<br>' +
             '<strong>Alumno: </strong>' + found.estudiante + '<br>' + 
             '<strong>C.I.: </strong>' + found.ci + '<br>' + 
-            '<strong>Curso: </strong>' + found.curso;
+            '<strong>Curso: </strong>' + found.curso + '<br>' +
+            '<a href='+ path +' target=\'blank\'>¡Descargar certificado firmado!</a>';
             nombreEstudiante.appendChild(div);
             msgOk.style.display = "block";
         }else{
             msgError.style.display = "block";
         }
+        myModal.show();
     }
 
 }
@@ -35,6 +37,8 @@ function validarImput(codigo){
     if (codigo == "") {
         alert("El código no puede ser vacío, favor cargué el código validador del certificado!");
         return false;
+    }else{
+        return true;
     }
 }
 

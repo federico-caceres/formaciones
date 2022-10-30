@@ -14,14 +14,14 @@
 
             <br><br><br><br><br><br><br><br>
             <div class="row justify-content-center mt-5">
-                <div class="card col-md-6 pb-5 bg-gray px-0">
+                <div class="card col-lg-6 col-md-8 col-sm-10 pb-5 bg-gray px-0 border-primary">
                     <div class="card-header text-center">
                         <h1>Validador de certificados</h1>
                     </div>
                     <div class="body px-5">
                         <div class="input-group mb-3 mt-5">
                             <input id="codigo" type="text" class="form-control form-control-lg" placeholder="Código del certificado" aria-label="Código del certificado" aria-describedby="btn-validate-certificate">
-                            <button class="btn btn-outline-primary btn-lg" type="button" id="btn-validate-certificate" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="buscarAlumno()">Validar</button>
+                            <button class="btn btn-outline-primary btn-lg" type="button" id="btn-validate-certificate" onclick="buscarAlumno()">Validar</button>
                         </div>
                     </div>
     
@@ -42,7 +42,7 @@
                                 <div id="alumno"></div>
                             </div>
                             <div id="certificadoNoEncontrado" class="alert alert-danger" style="display:none;">
-                                <strong>Código inválido!</strong> 
+                                <strong>No se encontró certificados!</strong> 
                             </div>
                         </div>
                         <div class="modal-footer">

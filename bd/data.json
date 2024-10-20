@@ -58,5 +58,59 @@
         "ci":5718095,
         "codigo":10,
         "curso":"Curso Básico de HTML5"
+    },
+    {
+        "estudiante":"Rodrigo Ruiz Díaz Campuzano",
+        "ci":3651905,
+        "codigo":11,
+        "curso":"Curso Básico de Programación Web" 
+    },
+    {
+        "estudiante":"Julio César Zorrilla Vázquez",
+        "ci":3391535,
+        "codigo":12,
+        "curso":"Curso Básico de Programación Web" 
+    },
+    {
+        "estudiante":"Rossana Ramirez",
+        "ci":13,
+        "codigo":13,
+        "curso":"Curso Básico de Programación Web" 
+    },
+    {
+        "estudiante":"Robert Esteban Salinas Cantero",
+        "ci":6211889,
+        "codigo":14,
+        "curso":"Curso Básico de Programación Web" 
+    },
+    {
+        "estudiante":"Noelia Raquel Flor Zárate",
+        "ci":3831161,
+        "codigo":15,
+        "curso":"Curso Básico de Programación Web" 
+    },
+    {
+        "estudiante":"Jhonatan Mathías Benitez Trasmonte",
+        "ci":16,
+        "codigo":16,
+        "curso":"Curso Básico de Programación Web" 
+    },
+    {
+        "estudiante":"Mathias Ariel Rios Fleitas",
+        "ci":17,
+        "codigo":17,
+        "curso":"Curso Básico de Programación Web" 
+    },
+    {
+        "estudiante":"Ruth María Isabel Santacruz Cubas",
+        "ci":18,
+        "codigo":18,
+        "curso":"Curso Básico de Programación Web" 
+    },
+    {
+        "estudiante":"Derlis Rafael Alfonzo Valdez",
+        "ci":3819119,
+        "codigo":19,
+        "curso":"Curso Básico de Programación Web" 
     }
 ]

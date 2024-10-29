@@ -136,7 +136,7 @@ var data =
     },
     {
         "estudiante":"Rossana Ramirez",
-        "ci":13,
+        "ci":5637177,
         "codigo":13,
         "curso":"Curso Básico de Programación Web" 
     },
@@ -154,19 +154,19 @@ var data =
     },
     {
         "estudiante":"Jhonatan Mathías Benitez Trasmonte",
-        "ci":16,
+        "ci":5442791,
         "codigo":16,
         "curso":"Curso Básico de Programación Web" 
     },
     {
         "estudiante":"Mathias Ariel Rios Fleitas",
-        "ci":17,
+        "ci":5126084,
         "codigo":17,
         "curso":"Curso Básico de Programación Web" 
     },
     {
         "estudiante":"Ruth María Isabel Santacruz Cubas",
-        "ci":18,
+        "ci":6630266,
         "codigo":18,
         "curso":"Curso Básico de Programación Web" 
     },
@@ -174,6 +174,18 @@ var data =
         "estudiante":"Derlis Rafael Alfonzo Valdez",
         "ci":3819119,
         "codigo":19,
+        "curso":"Curso Básico de Programación Web" 
+    },
+    {
+        "estudiante":"Mariela Ocampo",
+        "ci":4864243,
+        "codigo":20,
+        "curso":"Curso Básico de Programación Web" 
+    },
+    {
+        "estudiante":"Carlos González",
+        "ci":4835806,
+        "codigo":21,
         "curso":"Curso Básico de Programación Web" 
     }
 ];
